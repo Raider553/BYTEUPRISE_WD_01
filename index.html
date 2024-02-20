@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PERSONAL PORTFOLIO WEBSITE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/0bcbd0197b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logokartik1.png" class="logo" data-aos="fade-right">
+                <ul id="sidemenu" data-aos="fade-left">
+                    <br><br>
+                    <li><a href="#header"><b>HOME</b></a></li>
+                    <li><a href="#about"><b>ABOUT</b></a></li>
+                    <li><a href="#services"><b>SERVICES</b></a></li>
+                    <li><a href="#portfolio"><b>PORTFOLIO</b></a></li>
+                    <li><a href="#contact"><b>CONTACT</b></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="fade-right">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm<span> Kartik</span> <br>Ghormade From India</h1>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------about------------------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <img src="user.jpg" >
+                </div>
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptatum explicabo excepturi sapiente similique,
+                        omnis repellendus quas accusamus voluptatem numquam, totam labore voluptas quisquam dolorum tenetur accusantium. Ducimus, tempora vero?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Web App Development</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Web Developer Intern at ByteUprise</li>
+                            <li><span>2024-JANUARY</span><br>Intern at Anmol Foundation</li>
+                            <li><span>2024-FEBRUARY</span><br>Working on Mini-Project and the topic is CHATBOT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Certification at Greatlearning of Python Fundamentals For Beginners</li>
+                            <li><span>2023</span><br>Certification at Greatlearning of Front-End Development-HTML</li>
+                            <li><span>2023</span><br>Certification at Greatlearning of Front-End Development-CSS</li>
+                            <li><span>2024</span><br>Certification at Greatlearning of Java Programming</li>
+                            <li><span>2023-2024</span><br>Learning Full Stack Development at SoftbuzzTech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------------------------services----------------------------------------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-right">My Services</h1>
+            <div class="services-list" data-aos="zoom-in-up">
+                <div >
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Natus aliquam nesciunt doloribus aut possimus id praesentium suscipit, 
+                     molestiae a nihil sed quo exercitationem reiciendis tempora quas veniam sint et! Enim.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Natus aliquam nesciunt doloribus aut possimus id praesentium suscipit,
+                     molestiae a nihil sed quo exercitationem reiciendis tempora quas veniam sint et! Enim.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Natus aliquam nesciunt doloribus aut possimus id praesentium suscipit,
+                     molestiae a nihil sed quo exercitationem reiciendis tempora quas veniam sint et! Enim.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------portfolio-------------------------------------------------------------------------------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-right">My Work</h1>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="weatherapp.png">
+                    <div class="layer">
+                        <h3>Weather Web App</h3>
+                        <p>The application of science and technology to predict the conditions of the atmosphere for a given location and time.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="p1.jpg">
+                    <div class="layer">
+                        <h3>StopWatch Web App</h3>
+                        <p>An online stopwatch is a digital timer that can be used to measure the amount of time that has elapsed between two events.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="tic-tac-toe.png">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Tic-Tac-Toe is a two-player game in which the players fill up nine empty rectangles in a table with either an X or an O when it is their turn. Once someone succeeds to line up their sign vertically or horizontally without an interruption, that player wins.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" data-aos="zoom-in-up">See More</a>
+        </div>
+     </div>
+<!---------------------------------------------------------------Contact-------------------------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kartikghormade4@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9356759584</p><br><br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kartik.ghormade.73"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/its_kartik553/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kartik-ghormade-7b7989234/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kartik, Made with <i class="fa-solid fa-heart"></i> by KARTIK GHORMADE</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }  
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");                                                         
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgZJw_vOMb0q1Pvs4jOgQezOuS_8zcEW1dqgnEklZmF7nQN88T_eqpuazkabXU0-VJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                msg.innerHTML = ""
+                },2000)
+            form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+         AOS.init({
+            offset: 250,
+            duration: 1200,
+         });
+        </script>
+</body>
+</html>
+
